@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+<ion-view hide-back-button="false">
+  <div class="bar bar-header bar-stable">
+    <div class="button button-clear icon ion-ios-arrow-back" ng-click="GoBack()"></div>
+    <h1 class="title">设备详情</h1>
+  </div>
+  <ion-content class="has-header " overflow-scroll="true">
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">名称</span>
+        <input type="text"  ng-model="nowTool.equipmentName">
+      </label>
+      <div class="item item-input item-select">
+        <div class="input-label">
+          场景
+        </div>
+        <select ng-model="nowTool.room.id" ng-options="room.id as room.roomName for room in rooms">
+        </select>
+      </div>
+      <br><br>
+      <div class="padding">
+        <button class="button button-block button-positive" ng-click="Save()">
+          保存
+        </button>
+      </div>
+      <div class="padding">
+        <button class="button button-block button-dark" ng-click="GoBack()">
+          返回
+        </button>
+      </div>
+      <br><br>
+      <div class="padding">
+        <button class="button button-block button-assertive" ng-click="Delete()">
+          删除
+        </button>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

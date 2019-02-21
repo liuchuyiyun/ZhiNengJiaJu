@@ -1,0 +1,51 @@
+{
+  "Lights": [
+    {
+      "id": 1,
+      "name": "灯1",
+      "sceneId": 0,
+      "furnId": 0,
+      "isOpen": true
+    },
+    {
+      "id": 2,
+      "name": "灯2",
+      "sceneId": 1,
+      "furnId": 0,
+      "isOpen": false
+    },
+    {
+      "id": 3,
+      "name": "灯3",
+      "sceneId": 2,
+      "furnId": 0,
+      "isOpen": true
+    }
+  ],
+  "AirConditioning": [
+    {
+      "id": 4,
+      "name": "空调1",
+      "brand": "牌子1",
+      "sceneId": 0,
+      "furnId": 1,
+      "isOpen": true
+    },
+    {
+      "id": 5,
+      "name": "空调2",
+      "name": "牌子2",
+      "sceneId": 0,
+      "furnId": 1,
+      "isOpen": false
+    },
+    {
+      "id": 6,
+      "name": "空调3",
+      "name": "牌子3",
+      "sceneId": 0,
+      "furnId": 1,
+      "isOpen": true
+    }
+  ]
+}

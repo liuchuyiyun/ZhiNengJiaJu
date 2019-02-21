@@ -1,0 +1,9 @@
+{
+  "Lights":
+  [
+    {"name":"灯1","scene":"场景1","isOpen":true},
+    {"name":"灯2","scene":"场景2","isOpen":false},
+    {"name":"灯3","scene":"场景3","isOpen":true}
+  ]
+
+}

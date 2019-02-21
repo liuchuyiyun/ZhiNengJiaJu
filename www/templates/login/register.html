@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<ion-view view-title="注册" >
+  <ion-content>
+<div class="top">
+  注&nbsp;册
+</div>
+    <div class="div_center" style="margin-top: 30px;font-weight: bold;font-family: YouYuan" ng-controller="registerController">
+      <label class="item item-input myInput" style="width: 20rem">
+        <i class="icon ion-ios-email-outline placeholder-icon" style="font-size: 35px"></i>
+        <input type="text" placeholder="邮箱" ng-model="email" required>
+      </label>
+      <br>
+      <label class="item item-input myInput" style="width: 20rem">
+        <i class="icon ion-ios-locked-outline placeholder-icon" style="font-size: 35px"></i>
+        <input type="password" placeholder="至少8位字母+数字结合,且不大于16位" id="userPass" ng-model="userPass" ng-maxlength="16" required>
+      </label>
+      <br>
+      <label class="item item-input myInput" style="width: 20rem">
+        <i class="icon ion-ios-locked-outline placeholder-icon" style="font-size: 35px"></i>
+        <input type="password" placeholder="再输一次密码" ng-model="checkPass" required>
+      </label>
+      <br><br>
+      <div><input type="checkbox" style="width: 15px;height: 15px" id="registerCheck" ng-click="checkRegister()">
+        <span style="color: darkgray;font-size: 17px"> 同意 <a href="">服务条款</a> 和 <A href="">隐私政策</A></span></div>
+      <br>
+      <button class="button button-block button-calm" style="border-radius: 25px" ng-click="surePass()" ng-disabled="error">
+        <b style="font-family: YouYuan" >注&nbsp;&nbsp;册</b></button>
+      <br>
+      <span style="font-size: 22px"><a href="#/login">已有账号了？马上登录</a></span>
+    </div>
+  </ion-content>
+</ion-view>
+

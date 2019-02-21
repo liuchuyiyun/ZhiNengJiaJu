@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "date": {
+    "state": 1,
+    "stateInfo": "注册成功",
+    "user": {
+      "email": "12345678@qq.com",
+      "userName": null,
+      "userPass": "123456",
+      "gateway": null,
+      "rooms": []
+    }
+  },
+  "error": null
+}

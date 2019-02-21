@@ -1,0 +1,9 @@
+{
+  "success": false,
+  "data": {
+    "state": -2,
+    "stateInfo": "该设备未连接",
+    "data": null
+  },
+  "error": null
+}

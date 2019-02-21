@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ion-view view-title="登录">
+  <ion-content style="background-image: url(img/lvsebg.jpg)">
+    <div class="div_center" style="font-weight: bold" ng-controller="loginController">
+      <span class="input-label" style="color: white;text-align: left">邮箱：</span>
+      <input type="email" placeholder="请在这里输入您的邮箱" style="border-radius: 15px;width: 330px"
+             ng-model="email" required>
+      <br>
+      <span class="input-label" style="color: white;text-align: left">密码：</span>
+      <input type="password" placeholder="请在这里输入您的密码" style="border-radius: 15px;width: 330px"
+             ng-model="userPass" required>
+      <br>
+
+      <div style="float: left"><a href="#/forgot"><span
+        style="color: snow;font-size: 17px;font-weight: bold">忘记密码</span></a></div>
+      <div style="float: right;color: snow">
+        <input type="checkbox" style="width: 15px;height: 15px" id="checkbox"
+               ng-model="rePass"><span style="font-size: 18px">记住密码</span>
+      </div>
+      <br> <br>
+      <a class="button button-stable" style="float: left;margin-left: 10px;width: 100px"
+         href="#/register"><b>注册账号</b></a>
+      <a class="button button-stable" style="float: right;margin-right: 10px;width: 100px" ng-click="login()">
+        <span style="float: left;color: limegreen;font-size: 25px">√</span>
+        <span style="font-weight: bold">登录</span></a>
+    </div>
+  </ion-content>
+</ion-view>
+</body>
+</html>

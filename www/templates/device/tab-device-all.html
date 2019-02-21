@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+<ion-view>
+  <div class="bar bar-header bar-stable ">
+    <div class="button button-clear icon ion-home"></div>
+    <h1 class="title">设备</h1>
+    <div class="button button-clear icon ion-plus-round"></div>
+  </div>
+  <div class="bar bar-subheader bar-stable ">
+    <div class="button-bar" >
+      <a class="button button-balanced" href="#/tab/deviceAll">设备列表</a>
+      <a class="button" href="#/tab/deviceScene">场景列表</a>
+      <a class="button" href="#/tab/deviceSmart">智能列表</a>
+    </div>
+  </div>
+  <ion-content class="has-header has-subheader">
+    <ion-refresher on-refresh="doRefresh()"></ion-refresher>
+    <div>
+      <div class="item  item-input item-select">
+        <div class="input-label">
+          &emsp;
+        </div>
+        <select  ng-model="nowFurniture.id" ng-options="furniture.id as furniture.name for furniture in furnitures"
+          style="margin-right: 36%" ng-change="UpdateToolList()" >
+        </select>
+      </div>
+      <div class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="设备名称" ng-model="myFilter">
+      </div>
+    </div>
+    <ion-list>
+      <ion-toggle class="item item-icon-left  " ng-repeat="tool in toolList|filter:{'equipmentName':myFilter}"
+               ng-model="tool.isOpen" ng-change="OpenClose(tool)">
+
+        <i class="icon ion-ios-lightbulb " ng-if="!tool.isOpen"></i>
+        <i class="icon ion-ios-lightbulb assertive" ng-if="tool.isOpen"></i>
+
+        <h2 ng-bind="tool.equipmentName"></h2>
+
+        <p ng-bind="tool.room.roomName"></p>
+
+
+      </ion-toggle>
+    </ion-list>
+
+
+  </ion-content>
+</ion-view>

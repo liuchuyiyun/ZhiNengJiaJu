@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<ion-view title="设备类型表">
+  <div class="bar bar-header bar-stable ">
+    <h1 class="title">设备类型表</h1>
+  </div>
+  <ion-content class="has-header">
+    <div class="item item-input" >
+      <i class="icon ion-search placeholder-icon"></i>
+      <input type="text" placeholder="设备名称" ng-model="myFilter" >
+    </div>
+<ion-list>
+  <a class="item  item-icon-right " ng-repeat="furn in furnitures" ng-click="GoList(furn)">
+    <h2>{{furn.name}}</h2>
+    <i class="icon ion-android-arrow-dropright-circle icon-accessory" style="font-size: 25px"></i>
+  </a>
+</ion-list>
+  </ion-content>
+</ion-view>
